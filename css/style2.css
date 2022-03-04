@@ -1,0 +1,423 @@
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+body{
+    background-color: #352F2B;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bad Script', cursive;
+}
+
+/* Global */
+.container{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Header */
+header{
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background: #352F2B;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 40px;
+    border-bottom: #352F2B 3px solid;
+}
+
+
+h1{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: auto;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    display: flex;
+    /* color: transparent; */
+    font-size: 60px;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    /* font-family: 'Bad Script', curvise; */
+    /* align-items: center; */
+}
+
+h1 span{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    display: flex;
+    font-size: 60px;
+    animation: animate 6s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        color: #fff;
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+    }
+
+    30%,70%{
+        color: #fff;
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+    }
+
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter: hue-rotate(0deg);
+    }
+}
+
+.container4{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #352F2B;
+}
+
+.square{
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    /* -o-transition: background .5s; */
+}
+
+/* newsletters */
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: #352F2B;
+}
+
+#newsletter h1{
+    align-items: center;
+    text-align: center;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 40px;
+    color: #b76cfd;
+    text-shadow: 0 0 1px #b76cfd,
+    0 0 10px #b76cfd,
+    0 0 21px #b76cfd;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    height: 60px;
+    align-items: center;
+    padding: 0px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #00b3ff;
+    text-align: center;
+    min-height: 30px;
+}
+
+p{
+    font-size: 30px;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: #ffffff;
+}
+
+.rgb{
+    padding: 0;
+    width:100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #352F2B;
+}
+
+.foot{
+    background-color: #00b3ff;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header .branding, header nav, header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+} 
+
+.buttoncontainer{
+    width:100%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    box-sizing: border-box;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    flex-direction: row;
+
+}
+
+section{
+    background-color: #352F2B;
+}
+
+
+/* animation of buttons */
+a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 40px 20px;
+    color: #03e9f4;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1){
+    filter: hue-rotate(170deg);
+}
+
+a:nth-child(2){
+    filter: hue-rotate(180deg);
+}
+
+a:nth-child(3){
+    filter: hue-rotate(-60deg);
+}
+
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
+
+#reset{
+    border: none;
+    outline: none;
+	/* color: #2C8E99; */
+	font-family: "Raleway", Sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+    background: none;
+	/* background-color: white; */
+	height: 100%;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	/* o-transition: all 0.3s; */
+}
+.mode{
+    border: none;
+    outline: none;
+	/* color: #2C8E99; */
+	font-family: "Raleway", Sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+    background: none;
+	/* background-color: white; */
+	height: 100%;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	/* o-transition: all 0.3s; */
+}
+.mode selected{
+    border: none;
+    outline: none;
+	/* color: #2C8E99; */
+	font-family: "Raleway", Sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+    background: none;
+	/* background-color: white; */
+	height: 100%;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	/* o-transition: all 0.3s; */
+}
+
+#message {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 45px;
+	display: inline-block;
+	width: 20%;
+    align-content: center;
+}
+
+#color-display{
+    font-family: "Raleway", Sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: #352F2B;
+    color: #03e9f4;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #03e9f4, 0 0 40px #03e9f4, 0 0 50px #03e9f4;
+    }
+    to {
+        text-shadow: 0 0 30px #03e9f4, 0 0 50px #03e9f4, 0 0 60px #03e9f4;
+    }
+} 
