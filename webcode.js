@@ -34,7 +34,7 @@ function setupSquares() {
 				changeColors(pickedColor);
 			}
 			else {
-				this.style.backgroundColor = "#232323";
+				this.style.visibility = "hidden";
 				messageDisplay.textContent = "try again";
 			}
 		});
@@ -70,9 +70,11 @@ function reset() {
 		if(colors[i]) { 
 			squares[i].style.display = "block";
 			squares[i].style.backgroundColor = colors[i];
+			// console.log("hi");
 		}
 		else {
 			squares[i].style.display = "none";
+			// console.log("hello");
 		}
 	}
 }
